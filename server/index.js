@@ -13,7 +13,7 @@ app.get('/download', (req, res) => {
     res.download(filePath);
 });
 
-app.post('/upload', express.raw({ type: 'application/octet-stream', limit: '4.5mb' }), (req, res) => {
+app.post('/upload', express.raw({ type: 'application/octet-stream', limit: '50mb' }), (req, res) => {
     console.log(`Uploaded ${req.body.length} bytes`);
     res.sendStatus(200);
 });
