@@ -46,6 +46,9 @@ export const calculateUploadSpeed = async () => {
   }
 };
 
+
+
+
 export const calculateLatency = async () => {
   try {
     const startTime = Date.now();
